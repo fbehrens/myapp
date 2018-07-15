@@ -5,6 +5,8 @@ group Server
     nuget FSharp.Core
     nuget Saturn
     nuget Fable.JsonConverter
+    nuget Microsoft.ApplicationInsights.AspNetCore ~> 2.2
+    nuget WindowsAzure.Storage
 
 group Client
     storage: none
@@ -26,4 +28,8 @@ group Build
     nuget Fake.Core.Target
     nuget Fake.DotNet.Cli
     nuget Fake.IO.FileSystem
+    nuget Fake.Core.Environment
+    nuget Fake.Core.Trace
+    nuget Fake.IO.Zip
+    github CompositionalIT/fshelpers src/FsHelpers/ArmHelper/ArmHelper.fs
 
